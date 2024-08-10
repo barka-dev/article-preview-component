@@ -5,12 +5,18 @@
     font-family: 'Manrope', 'sans serif';
 }
 
+body{
+    background-color:#ECF2F8;
+}
+
 article{
-    border:1px solid hotpink;
     width:20.4375rem;
     border-radius:10px;
     margin-inline:auto;
     overflow:hidden;
+    position:relative;
+    background-color:#FFFFFF;
+    margin-block-start:5rem;
 }
 
 article > div{
@@ -24,7 +30,6 @@ article > div{
 }
 
 article > section:nth-of-type(1){
-    border:1px solid lime;
     padding: 2.25rem 2rem 1.25rem;
 }
 
@@ -74,11 +79,46 @@ article > section > section > section > p{
     color:#9DAEC2;
 }
 
-article > section > section > button{
+article>section>section>button{
+    background-color:#ECF2F8;
+}
+
+button{
     width:2rem;
     height:2rem;
     border-radius:50%;
     border:none;
-    background-color:#ECF2F8;
     margin-left: auto;
+}
+
+article > section:last-of-type{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    display:flex;
+    background-color:#48556A;
+    border-radius:0 0 10px 10px;
+    align-items:center;
+    padding-block:1.375rem;
+    padding-inline:2rem;
+    gap:1.3125rem;
+    display:none;
+
+}
+
+article > section:last-of-type p{
+    margin-block:0;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    color:#9DAEC2;
+}
+
+article > section:last-of-type div{
+    display:flex;
+    gap:1rem;
+    align-items:center;
+}
+
+article> section:last-of-type button{
+    background-color:#6E8098;
 }
