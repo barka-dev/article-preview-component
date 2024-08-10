@@ -13,7 +13,6 @@ article{
     width:20.4375rem;
     border-radius:10px;
     margin-inline:auto;
-    overflow:hidden;
     position:relative;
     background-color:#FFFFFF;
     margin-block:3rem;
@@ -84,6 +83,7 @@ article > section > section > section > p{
 
 article>section>section>button{
     background-color:#ECF2F8;
+    z-index:2;
 }
 
 button{
@@ -126,6 +126,19 @@ article> section:last-of-type button{
     background-color:#6E8098;
 }
 
+.active{
+    display:flex !important;
+}
+
+.activeShareButton{
+    background-color:#6E8098 !important;
+}
+
+.activePosition{
+    padding: 2.25rem 2rem .68rem !important;
+}
+
+
 @media screen and (min-width:768px){
     main{
         height:100vh;
@@ -137,6 +150,7 @@ article> section:last-of-type button{
         display:grid;
         grid-template-columns:repeat(5,1fr);
         margin-block:0rem;
+
     }
 
     article > div{
@@ -160,6 +174,26 @@ article> section:last-of-type button{
 
     article > section > section {
         margin-block-start:1.25rem;
+    }
+
+    article > section:last-of-type{
+        position:absolute;
+        bottom:5.25rem;
+        left:34.375rem;
+        width:auto;
+        border-radius:10px;
+        padding-block:1.125rem;
+        padding-inline:2.25rem;
+        display:none;
+    
+    }
+
+    article > section:last-of-type::after{
+        content:"";
+        width:1.5rem;
+        height:1.5rem;
+        background-color: blue;
+        transform: rotate(45deg);
     }
     
 }
