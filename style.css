@@ -16,7 +16,10 @@ article{
     overflow:hidden;
     position:relative;
     background-color:#FFFFFF;
-    margin-block-start:5rem;
+    margin-block:3rem;
+    box-shadow: 0px 40px 40px -10px rgba(201,213,225,0.5);
+    -webkit-box-shadow: 0px 40px 40px -10px rgba(201,213,225,0.5);
+    -moz-box-shadow: 0px 40px 40px -10px rgba(201,213,225,0.5);
 }
 
 article > div{
@@ -121,4 +124,42 @@ article > section:last-of-type div{
 
 article> section:last-of-type button{
     background-color:#6E8098;
+}
+
+@media screen and (min-width:768px){
+    main{
+        height:100vh;
+        display:flex;
+        align-items:center;
+    }
+    article{
+        width:45.625rem;
+        display:grid;
+        grid-template-columns:repeat(5,1fr);
+        margin-block:0rem;
+    }
+
+    article > div{
+        background-position:0% center;
+        width:17.8125rem;
+        height:17.5rem;
+        border-radius: 10px 0 0 10px;
+        grid-column:span 2;
+    }
+
+    article > section:nth-of-type(1){
+        padding: 2rem 2.5rem 2rem;
+        grid-column:span 3;
+    }
+
+    article > section > h1{
+        font-size: 1.25rem;
+        line-height:1.75rem;
+        letter-spacing:0.25px;
+    }
+
+    article > section > section {
+        margin-block-start:1.25rem;
+    }
+    
 }
