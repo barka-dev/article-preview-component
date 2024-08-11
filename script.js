@@ -20,7 +20,4 @@ shareIcon.addEventListener('click',(event)=>{
     }else{
         activeIcon.src = './images/icon-share.svg';
     }
-
-    
-
 });
