@@ -81,17 +81,15 @@ article > section > section > section > p{
     color:#9DAEC2;
 }
 
-article>section>section>button{
-    background-color:#ECF2F8;
-    z-index:2;
-}
-
 button{
     width:2rem;
     height:2rem;
     border-radius:50%;
     border:none;
     margin-left: auto;
+    background-color:#ECF2F8;
+    z-index:2;
+    cursor:pointer;
 }
 
 article > section:last-of-type{
@@ -122,8 +120,13 @@ article > section:last-of-type div{
     align-items:center;
 }
 
-article> section:last-of-type button{
-    background-color:#6E8098;
+a {
+    display: inline-block;
+}
+
+a img{
+    display: block;
+    cursor:pointer;
 }
 
 .active{
@@ -178,22 +181,29 @@ article> section:last-of-type button{
 
     article > section:last-of-type{
         position:absolute;
-        bottom:5.25rem;
+        bottom:6rem;
         left:34.375rem;
         width:auto;
         border-radius:10px;
         padding-block:1.125rem;
         padding-inline:2.25rem;
+        box-shadow: 0px 10px 10px 0px rgba(201,213,225,0.5);
+        -webkit-box-shadow: 0px 10px 10px 0px rgba(201,213,225,0.5);
+        -moz-box-shadow: 0px 10px 10px 0px rgba(201,213,225,0.5);
         display:none;
     
     }
 
     article > section:last-of-type::after{
         content:"";
+        position:absolute;
+        bottom:-0.7rem;
+        left:45%;
         width:1.5rem;
         height:1.5rem;
-        background-color: blue;
+        background-color:#48556A;
         transform: rotate(45deg);
+        border-radius:50px 0 0 0;
     }
     
 }
